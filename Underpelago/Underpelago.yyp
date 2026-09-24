@@ -21,6 +21,7 @@
   "resources":[
     {"id":{"name":"box","path":"objects/box/box.yy",},},
     {"id":{"name":"Collision","path":"objects/Collision/Collision.yy",},},
+    {"id":{"name":"game","path":"objects/game/game.yy",},},
     {"id":{"name":"soulF","path":"objects/soulF/soulF.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"boxSprite","path":"sprites/boxSprite/boxSprite.yy",},},
