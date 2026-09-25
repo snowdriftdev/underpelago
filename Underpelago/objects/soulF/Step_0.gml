@@ -28,3 +28,6 @@ if (instance_exists(soulF)) {
 
 x += xSpeed
 y += ySpeed
+
+
+// testing stuff and other stuff and lot's of stuff
