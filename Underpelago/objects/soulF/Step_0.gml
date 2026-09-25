@@ -22,7 +22,11 @@ if (instance_exists(soulF)) {
 
 	}
 }
-
+if (instance_exists(my_hurtbox)) {
+    my_hurtbox.x = soulF.x + 15;
+    my_hurtbox.y = soulF.y - 10;
+    my_hurtbox.image_xscale = image_xscale; // Flips with your character if facing left/right
+}
 
 
 
