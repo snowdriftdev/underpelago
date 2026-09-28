@@ -9,6 +9,21 @@ var wall = box
 xSpeed = (rightKey - leftKey) * playerSpeed
 ySpeed = (downKey - upKey) * playerSpeed
 
+fWidth = soulF.sprite_width
+
+//Hitbox
+if (instance_exists(my_hurtbox)) {   
+	var target_width = .15 * fWidth;   // Current width including its scale
+	var target_height = fWidth - 8; // Current height including its scale
+
+	// Divide target size by the hurtbox's original, unscaled sprite dimensions
+	my_hurtbox.image_xscale = target_width / sprite_get_width(my_hurtbox.sprite_index);
+	my_hurtbox.image_yscale = target_height / sprite_get_height(my_hurtbox.sprite_index);
+	
+	my_hurtbox.x = soulF.x + ((.5 * fWidth) - (.5 * my_hurtbox.sprite_width));
+    my_hurtbox.y = soulF.y + 8;
+}
+
 //Collision
 if (instance_exists(soulF)) {
 	if(place_meeting(x + xSpeed, y, Collision)){
@@ -22,13 +37,6 @@ if (instance_exists(soulF)) {
 
 	}
 }
-if (instance_exists(my_hurtbox)) {
-    my_hurtbox.x = soulF.x + 15;
-    my_hurtbox.y = soulF.y - 10;
-    my_hurtbox.image_xscale = image_xscale; // Flips with your character if facing left/right
-}
-
-
 
 x += xSpeed
 y += ySpeed
