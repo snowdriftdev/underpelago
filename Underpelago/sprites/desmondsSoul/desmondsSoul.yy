@@ -19,7 +19,7 @@
   "height":1024,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4813aed3-5878-43b3-bae2-c04279d28b87","blendMode":0,"displayName":"default","isLocked":false,"name":"4813aed3-5878-43b3-bae2-c04279d28b87","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4813aed3-5878-43b3-bae2-c04279d28b87","blendMode":0,"displayName":"default","isLocked":false,"name":"4813aed3-5878-43b3-bae2-c04279d28b87","opacity":53.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"desmondsSoul",
   "nineSlice":null,

@@ -19,7 +19,11 @@
   "height":64,
   "HTile":false,
   "layers":[
+<<<<<<< Updated upstream
     {"$GMImageLayer":"","%Name":"4a0f1468-a637-4fd3-b04f-68bb8dea3d4f","blendMode":0,"displayName":"default","isLocked":false,"name":"4a0f1468-a637-4fd3-b04f-68bb8dea3d4f","opacity":1.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+=======
+    {"$GMImageLayer":"","%Name":"4a0f1468-a637-4fd3-b04f-68bb8dea3d4f","blendMode":0,"displayName":"default","isLocked":false,"name":"4a0f1468-a637-4fd3-b04f-68bb8dea3d4f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+>>>>>>> Stashed changes
   ],
   "name":"Sprite6",
   "nineSlice":{
