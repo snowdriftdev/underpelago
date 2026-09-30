@@ -13,7 +13,7 @@ fWidth = soulF.sprite_width
 
 //Hitbox
 if (instance_exists(my_hurtbox)) {   
-	var target_width = .15 * fWidth;   // Current width including its scale
+	var target_width = .25 * fWidth;   // Current width including its scale
 	var target_height = fWidth - 8; // Current height including its scale
 
 	// Divide target size by the hurtbox's original, unscaled sprite dimensions
