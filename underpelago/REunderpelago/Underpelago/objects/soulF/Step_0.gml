@@ -11,7 +11,7 @@ ySpeed = (downKey - upKey) * playerSpeed;
 
 fWidth = soulF.sprite_width
 
-//Hitbox
+//Hurtbox
 if (instance_exists(my_hurtbox)) {   
 	var target_width = .25 * fWidth;   // Current width including its scale
 	var target_height = fWidth - 8; // Current height including its scale
@@ -23,6 +23,24 @@ if (instance_exists(my_hurtbox)) {
 	my_hurtbox.x = soulF.x + ((.5 * fWidth) - (.5 * my_hurtbox.sprite_width));
     my_hurtbox.y = soulF.y + 8;
 }
+// Step Event of player
+var _hitbox = instance_place(x, y, Hitbox);
+
+if (_hitbox != noone) {
+    // Reduce HP by the damage amount stored in that specific hitbox
+    _hitbox.damage = 16
+	hp -= _hitbox.damage; 
+} 
+
+// Pass the damage to the owner of this hurtbox (the player)
+if (instance_exists(soulF)) {
+    soulF.hp -= _hitbox.damage;
+}
+// Optional: set text font and color
+draw_set_color(c_white);
+
+// Draw the text string on the screen
+draw_text(32, 32, "HP: " + string(hp) + " / " + string(max_hp));
 
 //Collision
 if (instance_exists(soulF)) {
