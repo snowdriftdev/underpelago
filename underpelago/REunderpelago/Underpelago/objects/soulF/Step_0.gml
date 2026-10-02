@@ -29,7 +29,7 @@ var _hitbox = instance_place(x, y, Hitbox);
 if (_hitbox != noone) {
     // Reduce HP by the damage amount stored in that specific hitbox
     _hitbox.damage = 16
-	hp -= _hitbox.damage; 
+	soulF.hp -= _hitbox.damage; 
 } 
 
 // Pass the damage to the owner of this hurtbox (the player)
