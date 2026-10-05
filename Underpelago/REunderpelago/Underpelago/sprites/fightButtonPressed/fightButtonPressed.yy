@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"itemButton",
+  "%Name":"fightButtonPressed",
   "bboxMode":0,
   "bbox_bottom":43,
   "bbox_left":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"35501f85-d163-4557-b85a-ba14bad5435f","name":"35501f85-d163-4557-b85a-ba14bad5435f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"70951a08-fb17-43ee-bd5c-72cd0f3b9c66","name":"70951a08-fb17-43ee-bd5c-72cd0f3b9c66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":44,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"846f0ad1-c9ce-42dc-9698-ba22656e574f","blendMode":0,"displayName":"default","isLocked":false,"name":"846f0ad1-c9ce-42dc-9698-ba22656e574f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9a94ea78-4881-4d45-bacf-c694927aeaed","blendMode":0,"displayName":"default","isLocked":false,"name":"9a94ea78-4881-4d45-bacf-c694927aeaed","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"itemButton",
+  "name":"fightButtonPressed",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"itemButton",
+    "%Name":"fightButtonPressed",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"itemButton",
+    "name":"fightButtonPressed",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"35501f85-d163-4557-b85a-ba14bad5435f","path":"sprites/itemButton/itemButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5a0a9e11-2717-4891-80a8-908d03382531","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"70951a08-fb17-43ee-bd5c-72cd0f3b9c66","path":"sprites/fightButtonPressed/fightButtonPressed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e899556a-2709-49a9-9af7-d10337cf461c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

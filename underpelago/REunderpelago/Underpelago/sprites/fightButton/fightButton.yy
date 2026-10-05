@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"fightButton",
   "bboxMode":0,
-  "bbox_bottom":169,
+  "bbox_bottom":43,
   "bbox_left":0,
-  "bbox_right":595,
+  "bbox_right":111,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0313e8e8-69cc-4517-9790-d2b192d427c0","name":"0313e8e8-69cc-4517-9790-d2b192d427c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2608f7fd-7baa-470a-9007-c63eae1b1baa","name":"2608f7fd-7baa-470a-9007-c63eae1b1baa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":170,
+  "height":44,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b3837c24-40cb-4be3-983b-f5fdd407d459","blendMode":0,"displayName":"default","isLocked":false,"name":"b3837c24-40cb-4be3-983b-f5fdd407d459","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e900195a-a636-42c1-b6b1-4d1459ab24e9","blendMode":0,"displayName":"default","isLocked":false,"name":"e900195a-a636-42c1-b6b1-4d1459ab24e9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"fightButton",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0313e8e8-69cc-4517-9790-d2b192d427c0","path":"sprites/fightButton/fightButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4d9bbaa1-45b2-4b11-9570-b65a73e0f76a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2608f7fd-7baa-470a-9007-c63eae1b1baa","path":"sprites/fightButton/fightButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2d76562b-9c67-4adc-b1af-2e1fa039eed7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":596,
+  "width":112,
 }
