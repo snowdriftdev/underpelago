@@ -1,5 +1,4 @@
-var roomName = room_get_name(Room1);
-if (room != roomName) {
+if (room == Room1) {
 	//Controls
 	var rightKey = keyboard_check(vk_right);
 	var leftKey = keyboard_check(vk_left);
@@ -61,4 +60,7 @@ if (room != roomName) {
 	x += xSpeed;
 	y += ySpeed;
 
+}
+else if (room == itemScreen) {
+	
 }
