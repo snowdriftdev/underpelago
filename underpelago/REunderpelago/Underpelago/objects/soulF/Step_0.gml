@@ -24,25 +24,10 @@ if (room == Room1) {
 		my_hurtbox.x = soulF.x + ((.5 * fWidth) - (.5 * my_hurtbox.sprite_width));
 	    my_hurtbox.y = soulF.y + 8;
 	}
-	// Step Event of player
-	var _hitbox = instance_place(x, y, Hitbox);
-
-	if (_hitbox != noone) {
-	    // Reduce HP by the damage amount stored in that specific hitbox
-	    _hitbox.damage = 16
-		soulF.hp -= _hitbox.damage; 
-	} 
-
-	// Pass the damage to the owner of this hurtbox (the player)
-	if (instance_exists(soulF)) {
-	    soulF.hp -= _hitbox.damage;
-	}
-	// Optional: set text font and color
-	draw_set_color(c_white);
-
-	// Draw the text string on the screen
-	draw_text(32, 32, "HP: " + string(hp) + " / " + string(max_hp));
-
+	//Hitbox
+	//Hitbox passing through hurtbox
+	//Hitbox damage
+	//Hp gain / lose
 	//Collision
 	if (instance_exists(soulF)) {
 		if(place_meeting(x + xSpeed, y, Collision)){
