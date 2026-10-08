@@ -62,5 +62,7 @@ if (room == Room1) {
 
 }
 else if (room == itemScreen) {
-	
+	if (soulF.x == 117 && soulF.y == 655) {
+		
+	}
 }
