@@ -6,12 +6,13 @@ if (room == Room1) {
 	var upKey = keyboard_check(vk_up);
 
 	var wall = box;
+	
 	//movement
 	xSpeed = (rightKey - leftKey) * playerSpeed;
 	ySpeed = (downKey - upKey) * playerSpeed;
 
 	fWidth = soulF.sprite_width
-
+	}
 	//Hurtbox
 	if (instance_exists(my_hurtbox)) {   
 		var target_width = .25 * fWidth;   // Current width including its scale
@@ -25,6 +26,7 @@ if (room == Room1) {
 	    my_hurtbox.y = soulF.y + 8;
 	}
 	//Hitbox
+	
 	//Hitbox passing through hurtbox
 	//Hitbox damage
 	//Hp gain / lose
@@ -40,12 +42,22 @@ if (room == Room1) {
 			ySpeed = 0;
 
 		}
+		if(place_meeting(x + xSpeed, y, CollisionG)){
+
+			xSpeed = 0;
+
+		}
+		if(place_meeting(x, y + ySpeed, CollisionG)){
+
+			ySpeed = 0;
+
+		}
 	}
 
 	x += xSpeed;
 	y += ySpeed;
 
-}
-else if (room == itemScreen) {
+
+ if (room == itemScreen) {
 	
 }
