@@ -57,7 +57,10 @@ if (room == Room1) {
 	x += xSpeed;
 	y += ySpeed;
 
+}
+else if (room == itemScreen) {
+	if (soulF.x == 117 && soulF.y == 655) {
+		
+	}
 
- else if (room == itemScreen) {
-	
 }
