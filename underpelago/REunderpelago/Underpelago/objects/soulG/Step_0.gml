@@ -26,11 +26,21 @@
 		my_hurtbox.x = soulG.x + ((.5 * fWidth) - (.5 * my_hurtbox.sprite_width));
 	    my_hurtbox.y = soulG.y + 8;
 	}
-	//Hitbox
-	
 	//Hitbox passing through hurtbox
-	//Hitbox damage
+	if(instance_exists(my_hurtbox)){
+		if(place_meeting(x + xSpeed, y, Hitbox)){
+			hp -= 16;
+			hp = clamp(hp, 0, hp_max);
+		}
+		if(place_meeting(x, y + ySpeed, Hitbox)){
+			hp -= 16;
+			hp = clamp(hp, 0, hp_max);
+		}
+	}
 	//Hp gain / lose
+	if (hp <= 0) {
+    instance_destroy();
+}
 	//Collision
 	if (instance_exists(soulG)) {
 		if(place_meeting(x + xSpeed, y, CollisionG)){
