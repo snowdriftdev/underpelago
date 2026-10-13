@@ -58,6 +58,6 @@ if (room == Room1) {
 	y += ySpeed;
 
 
- if (room == itemScreen) {
+ else if (room == itemScreen) {
 	
 }
