@@ -12,7 +12,6 @@ if (room == Room1) {
 	ySpeed = (downKey - upKey) * playerSpeed;
 
 	fWidth = soulF.sprite_width
-	}
 	//Hurtbox
 	if (instance_exists(my_hurtbox)) {   
 		var target_width = .25 * fWidth;   // Current width including its scale
