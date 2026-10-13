@@ -29,15 +29,16 @@
 	//Hitbox passing through hurtbox
 	if(instance_exists(my_hurtbox)){
 		if(place_meeting(x + xSpeed, y, Hitbox)){
-			hp -= 16;
+			hp -= 0.16;
 			hp = clamp(hp, 0, hp_max);
 		}
 		if(place_meeting(x, y + ySpeed, Hitbox)){
-			hp -= 16;
+			hp -= 0.16;
 			hp = clamp(hp, 0, hp_max);
 		}
 	}
 	//Hp gain / lose
+	draw_text(32, 32, "HP: " + string(hp) + " / " + string(hp_max));
 	if (hp <= 0) {
     instance_destroy();
 }

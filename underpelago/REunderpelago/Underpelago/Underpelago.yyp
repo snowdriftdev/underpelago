@@ -25,7 +25,6 @@
     {"id":{"name":"CollisionG","path":"objects/CollisionG/CollisionG.yy",},},
     {"id":{"name":"CollisionGUP","path":"objects/CollisionGUP/CollisionGUP.yy",},},
     {"id":{"name":"fightButtonObject","path":"objects/fightButtonObject/fightButtonObject.yy",},},
-
     {"id":{"name":"game","path":"objects/game/game.yy",},},
     {"id":{"name":"Hitbox","path":"objects/Hitbox/Hitbox.yy",},},
     {"id":{"name":"HurtBox","path":"objects/HurtBox/HurtBox.yy",},},
