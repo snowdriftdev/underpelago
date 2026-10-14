@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"X16A",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":304.43683,
+  "exportDir":"",
+  "name":"X16A",
+  "parent":{
+    "name":"Underpelago",
+    "path":"Underpelago.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"X16A.ogg",
+  "volume":1.0,
+}
