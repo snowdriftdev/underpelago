@@ -4,13 +4,35 @@
 	var leftKey = keyboard_check(vk_left);
 	var downKey = keyboard_check(vk_down);
 	var upKey = keyboard_check(vk_up);
-
 	var wall = box;
 		
 		//make soul not be able to fly
 	xSpeed = (rightKey - leftKey) * playerSpeed;
 	ySpeed = (downKey - upKey) * playerSpeed;
-	
+	if(hp <= 88){
+		playerSpeed = 4.5;
+	}
+	if(hp <= 77){
+		playerSpeed = 4.75;
+	}
+	if(hp <= 66){
+		playerSpeed = 5;
+	}
+	if(hp <= 55){
+		playerSpeed = 5.5;
+	}	
+	if(hp <= 44){
+		playerSpeed = 5.75;
+	}	
+	if(hp <= 33){
+		playerSpeed = 6;
+	}
+	if(hp <= 22){
+		playerSpeed = 6.5;
+	}	
+	if(hp <= 11){
+		playerSpeed = 6.75;
+	}	
 	fWidth = soulG.sprite_width
 			gravity = -0.08
 			
@@ -28,17 +50,24 @@
 	}
 	//Hitbox passing through hurtbox
 	if(instance_exists(my_hurtbox)){
-		if(place_meeting(x + xSpeed, y, Hitbox)){
+		if(place_meeting(x + xSpeed, y, HitboxBone)){
 			hp -= 0.16;
 			hp = clamp(hp, 0, hp_max);
 		}
-		if(place_meeting(x, y + ySpeed, Hitbox)){
+		if(place_meeting(x, y + ySpeed, HitboxBone)){
 			hp -= 0.16;
+			hp = clamp(hp, 0, hp_max);
+		}
+		if(place_meeting(x + xSpeed, y, HitboxBlaster)){
+			hp -= 0.36;
+			hp = clamp(hp, 0, hp_max);
+		}
+		if(place_meeting(x, y + ySpeed, HitboxBlaster)){
+			hp -= 0.36;
 			hp = clamp(hp, 0, hp_max);
 		}
 	}
 	//Hp gain / lose
-	draw_text(32, 32, "HP: " + string(hp) + " / " + string(hp_max));
 	if (hp <= 0) {
     instance_destroy();
 }
@@ -68,11 +97,32 @@
 			ySpeed = 0;
 
 		}
-				if(place_meeting(x + xSpeed, y, Collision)){
+		if(place_meeting(x + xSpeed, y, PlatformUP)){
+            vspeed = 0.1;
+			gravity = 0;
 			xSpeed = 0;
 
 		}
-		if(place_meeting(x, y + ySpeed, Collision)){
+		if(place_meeting(x, y + ySpeed, PlatformUP)){
+            vspeed = 0.1;
+			gravity = 0;
+			ySpeed = 0;
+
+		}
+				if(place_meeting(x + xSpeed, y, CollisionL)){
+			xSpeed = 0;
+
+		}
+		if(place_meeting(x, y + ySpeed, CollisionL)){
+          
+			ySpeed = 0;
+
+		}
+						if(place_meeting(x + xSpeed, y, CollisionR)){
+			xSpeed = 0;
+
+		}
+		if(place_meeting(x, y + ySpeed, CollisionR)){
           
 			ySpeed = 0;
 
@@ -83,6 +133,6 @@
 	y += ySpeed;
 
 }
-else if (room == itemScreen) {
+if (room == itemScreen) {
 	
 }	

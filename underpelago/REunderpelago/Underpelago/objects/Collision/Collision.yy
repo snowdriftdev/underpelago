@@ -36,6 +36,9 @@
     "name":"CollisionSprite",
     "path":"sprites/CollisionSprite/CollisionSprite.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"CollisionSprite",
+    "path":"sprites/CollisionSprite/CollisionSprite.yy",
+  },
   "visible":true,
 }
