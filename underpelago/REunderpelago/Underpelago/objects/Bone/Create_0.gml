@@ -1,0 +1,1 @@
+timer2 = game_get_speed(gamespeed_fps) * 3.5;

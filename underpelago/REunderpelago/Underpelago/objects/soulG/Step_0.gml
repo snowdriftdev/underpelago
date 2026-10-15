@@ -33,19 +33,19 @@
 	if(hp <= 11){
 		playerSpeed = 6.75;
 	}	
-	fWidth = soulG.sprite_width
-			gravity = -0.08
+	gWidth = soulG.sprite_width
+			gravity = 0.08
 			
 		//Hurtbox
 	if (instance_exists(my_hurtbox)) {   
-		var target_width = .25 * fWidth;   // Current width including its scale
-		var target_height = fWidth - 8; // Current height including its scale
+		var target_width = .25 * gWidth;   // Current width including its scale
+		var target_height = gWidth - 8; // Current height including its scale
 
 		// Divide target size by the hurtbox's original, unscaled sprite dimensions
 		my_hurtbox.image_xscale = target_width / sprite_get_width(my_hurtbox.sprite_index);
 		my_hurtbox.image_yscale = target_height / sprite_get_height(my_hurtbox.sprite_index);
 	
-		my_hurtbox.x = soulG.x + ((.5 * fWidth) - (.5 * my_hurtbox.sprite_width));
+		my_hurtbox.x = soulG.x + ((.5 * gWidth) - (.5 * my_hurtbox.sprite_width));
 	    my_hurtbox.y = soulG.y + 8;
 	}
 	//Hitbox passing through hurtbox

@@ -7,7 +7,7 @@ playerSpeed = 4
 my_hurtbox = instance_create_layer(x, y, Collision, HurtBox);
 
 // Link it to this character
-my_hurtbox.owner = soulF;
+my_hurtbox.owner = soulGUP;
 
 //Hp?
 hp_max = 99
@@ -16,4 +16,4 @@ hp = hp_max
 is_invincible = false;
 invincible_duration = 60;
 
-timer1 = game_get_speed(gamespeed_fps) * 3;
+timer1 = game_get_speed(gamespeed_fps) * 1;

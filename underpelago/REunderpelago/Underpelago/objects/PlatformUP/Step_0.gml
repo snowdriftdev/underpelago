@@ -15,12 +15,12 @@ x -= 1;
 		if(has_touchedR = true){
 			x -= 0;
 		}
-		if(place_meeting(x,y,soulG)){	
+		if(place_meeting(x,y,soulGUP)){	
 			if(has_touchedL = true){
-			  soulG.x += 3;
+			  soulGUP.x += 3;
 			}
 			if(has_touchedR = true){
-			 soulG.x -= 3;
+			 soulGUP.x -= 3;
 			}
 		}
 	}	

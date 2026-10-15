@@ -125,11 +125,12 @@ var _x = x;
 var _y = y;
 var _layer = layer;
 instance_destroy();
-instance_create_layer(_x, _y, _layer, soulG);
+instance_create_layer(_x, _y, _layer, soulGUP);
 }
 
 }
 if (room == itemScreen) {
+
 		if (soulF.x == 114 && soulF.y == 647) {
 		var fight = fightButtonObject
 		fight.sprite_index = fightButtonPressed

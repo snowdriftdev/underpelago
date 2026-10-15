@@ -7,7 +7,7 @@ playerSpeed = 4
 my_hurtbox = instance_create_layer(x, y, Collision, HurtBox);
 
 // Link it to this character
-my_hurtbox.owner = soulG;
+my_hurtbox.owner = soulGUP;
 
 //Hp?
 hp_max = 99
