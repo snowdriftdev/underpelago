@@ -127,7 +127,6 @@ if (room == Room1) {
 		instance_destroy();
 		instance_create_layer(_x, _y, _layer, soulG);
 	}
-
 }
 else if (room == itemScreen) {
 	if (soulF.x == 114 && soulF.y == 647) {
