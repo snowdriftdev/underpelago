@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sp_dusttale_necroptosis___________Chara____720p_8",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":237.44725,
+  "exportDir":"",
+  "name":"sp_dusttale_necroptosis___________Chara____720p_8",
+  "parent":{
+    "name":"Underpelago",
+    "path":"Underpelago.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sp_dusttale_necroptosis___________Chara____720p_8.ogg",
+  "volume":1.0,
+}

@@ -1,4 +1,4 @@
-if (room == Room1) {
+		if (room == Room1) {
 	//Controls
 	var rightKey = keyboard_check(vk_right);
 	var leftKey = keyboard_check(vk_left);
@@ -120,17 +120,18 @@ if (room == Room1) {
 	y += ySpeed;
 	if (timer1 > 0) {
     timer1 -= 1;
-	} else {
-		var _x = x;
-		var _y = y;
-		var _layer = layer;
-		instance_destroy();
-		instance_create_layer(_x, _y, _layer, soulG);
-	}
+} else {
+var _x = x;
+var _y = y;
+var _layer = layer;
+instance_destroy();
+instance_create_layer(_x, _y, _layer, soulGUP);
+}
 
 }
-else if (room == itemScreen) {
-	if (soulF.x == 114 && soulF.y == 647) {
+if (room == itemScreen) {
+
+		if (soulF.x == 114 && soulF.y == 647) {
 		var fight = fightButtonObject
 		fight.sprite_index = fightButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
