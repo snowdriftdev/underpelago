@@ -129,17 +129,24 @@ if (room == Room1) {
 	}
 }
 else if (room == itemScreen) {
+	var item = itemButtonObject
+	var act = actButtonObject
+	var fight = fightButtonObject
+	
 	if (soulF.x == 114 && soulF.y == 647) {
-		var fight = fightButtonObject
 		fight.sprite_index = fightButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			fight.sprite_index = fightButton
 			soulF.x = 437
 			soulF.y = 647
 		}
+		if (keyboard_check_pressed(vk_left)) {
+			fight.sprite_index = fightButton
+			soulF.x = 760
+			soulF.y = 647
+		}
 	}
 	else if (soulF.x == 437 && soulF.y == 647) {
-		var item = itemButtonObject
 		item.sprite_index = itemButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			item.sprite_index = itemButton
@@ -153,11 +160,15 @@ else if (room == itemScreen) {
 		}
 	}
 	else if (soulF.x == 760 && soulF.y == 647) {
-		var act = actButtonObject
 		act.sprite_index = actButtonPressed
 		if (keyboard_check_pressed(vk_left)) {
 			act.sprite_index = actButton
 			soulF.x = 437
+			soulF.y = 647
+		}
+		else if (keyboard_check_pressed(vk_right)) {
+			act.sprite_index = actButton
+			soulF.x = 114
 			soulF.y = 647
 		}
 	}
