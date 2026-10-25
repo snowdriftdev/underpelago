@@ -133,43 +133,44 @@ else if (room == itemScreen) {
 	var act = actButtonObject
 	var fight = fightButtonObject
 	
-	if (soulF.x == 114 && soulF.y == 647) {
+	var itemButtonPos = 437
+	var actButtonPos = 760
+	var fightButtonPos = 114
+	
+	if (soulF.x == fightButtonPos && soulF.y == 647) {
 		fight.sprite_index = fightButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			fight.sprite_index = fightButton
-			soulF.x = 437
-			soulF.y = 647
+			soulF.x = itemButtonPos
 		}
-		if (keyboard_check_pressed(vk_left)) {
+		else if (keyboard_check_pressed(vk_left)) {
 			fight.sprite_index = fightButton
-			soulF.x = 760
-			soulF.y = 647
+			soulF.x = actButtonPos
+		}
+		else if (keyboard_check_pressed(vk_enter)) {
+			itemButtonClicked = true;
 		}
 	}
-	else if (soulF.x == 437 && soulF.y == 647) {
+	else if (soulF.x == itemButtonPos && soulF.y == 647) {
 		item.sprite_index = itemButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			item.sprite_index = itemButton
-			soulF.x = 760
-			soulF.y = 647
+			soulF.x = actButtonPos
 		}
 		else if (keyboard_check_pressed(vk_left)) {
 			item.sprite_index = itemButton
-			soulF.x = 114
-			soulF.y = 647
+			soulF.x = fightButtonPos
 		}
 	}
-	else if (soulF.x == 760 && soulF.y == 647) {
+	else if (soulF.x == actButtonPos && soulF.y == 647) {
 		act.sprite_index = actButtonPressed
 		if (keyboard_check_pressed(vk_left)) {
 			act.sprite_index = actButton
-			soulF.x = 437
-			soulF.y = 647
+			soulF.x = itemButtonPos
 		}
 		else if (keyboard_check_pressed(vk_right)) {
 			act.sprite_index = actButton
-			soulF.x = 114
-			soulF.y = 647
+			soulF.x = fightButtonPos
 		}
 	}
 }
