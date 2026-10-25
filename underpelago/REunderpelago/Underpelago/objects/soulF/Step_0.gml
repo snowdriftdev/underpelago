@@ -136,8 +136,18 @@ else if (room == itemScreen) {
 	var itemButtonPos = 437
 	var actButtonPos = 760
 	var fightButtonPos = 114
+	var buttonY = 647
 	
-	if (soulF.x == fightButtonPos && soulF.y == 647) {
+	var buttonPressed = {
+		x: 150,
+		y: 340
+	}
+	buttonText = {
+		x: 200,
+		y: 340
+	}
+	
+	if (soulF.x == fightButtonPos && soulF.y == buttonY) {
 		fight.sprite_index = fightButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			fight.sprite_index = fightButton
@@ -148,10 +158,12 @@ else if (room == itemScreen) {
 			soulF.x = actButtonPos
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
-			itemButtonClicked = true;
+			fightButtonClicked = true;
+			soulF.x = buttonPressed.x
+			soulF.y = buttonPressed.y
 		}
 	}
-	else if (soulF.x == itemButtonPos && soulF.y == 647) {
+	else if (soulF.x == itemButtonPos && soulF.y == buttonY) {
 		item.sprite_index = itemButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			item.sprite_index = itemButton
@@ -161,8 +173,13 @@ else if (room == itemScreen) {
 			item.sprite_index = itemButton
 			soulF.x = fightButtonPos
 		}
+		else if (keyboard_check_pressed(vk_enter)) {
+			itemButtonClicked = true;
+			soulF.x = buttonPressed.x
+			soulF.y = buttonPressed.y
+		}
 	}
-	else if (soulF.x == actButtonPos && soulF.y == 647) {
+	else if (soulF.x == actButtonPos && soulF.y == buttonY) {
 		act.sprite_index = actButtonPressed
 		if (keyboard_check_pressed(vk_left)) {
 			act.sprite_index = actButton
@@ -172,5 +189,25 @@ else if (room == itemScreen) {
 			act.sprite_index = actButton
 			soulF.x = fightButtonPos
 		}
+		else if (keyboard_check_pressed(vk_enter)) {
+			actButtonClicked = true;
+			soulF.x = buttonPressed.x
+			soulF.y = buttonPressed.y
+		}
+	}
+	if (fightButtonClicked && keyboard_check_pressed(ord("X"))) {
+		soulF.x = fightButtonPos
+		soulF.y = buttonY
+		fightButtonClicked = false
+	}
+	else if (itemButtonClicked && keyboard_check_pressed(ord("X"))) {
+		soulF.x = itemButtonPos
+		soulF.y = buttonY
+		itemButtonClicked = false
+	}
+	else if (actButtonClicked && keyboard_check_pressed(ord("X"))) {
+		soulF.x = actButtonPos
+		soulF.y = buttonY
+		actButtonClicked = false
 	}
 }

@@ -20,3 +20,5 @@ invincible_duration = 60;
 timer1 = game_get_speed(gamespeed_fps) * 1;
 
 itemButtonClicked = false
+actButtonClicked = false
+fightButtonClicked = false

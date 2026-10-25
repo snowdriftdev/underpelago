@@ -21,6 +21,7 @@
   },
   "name":"Underpelago",
   "resources":[
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"actButtonObject","path":"objects/actButtonObject/actButtonObject.yy",},},
     {"id":{"name":"Blaster","path":"objects/Blaster/Blaster.yy",},},
     {"id":{"name":"Bone","path":"objects/Bone/Bone.yy",},},
