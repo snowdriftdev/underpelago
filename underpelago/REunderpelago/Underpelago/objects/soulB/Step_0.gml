@@ -25,6 +25,7 @@
 	    my_hurtbox.y = soulB.y + 8;
 	}
 	//Hitbox passing through hurtbox
+	
 	if(instance_exists(my_hurtbox)){
 		if(place_meeting(x + xSpeed, y, HitboxBone)){
 			hp -= 0.16;
