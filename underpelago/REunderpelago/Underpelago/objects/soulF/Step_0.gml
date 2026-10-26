@@ -1,4 +1,4 @@
-		if (room == Room1) {
+if (room == Room1) {
 	//Controls
 	var rightKey = keyboard_check(vk_right);
 	var leftKey = keyboard_check(vk_left);
@@ -133,43 +133,81 @@ else if (room == itemScreen) {
 	var act = actButtonObject
 	var fight = fightButtonObject
 	
-	if (soulF.x == 114 && soulF.y == 647) {
+	var itemButtonPos = 437
+	var actButtonPos = 760
+	var fightButtonPos = 114
+	var buttonY = 647
+	
+	var buttonPressed = {
+		x: 150,
+		y: 340
+	}
+	buttonText = {
+		x: 200,
+		y: 340
+	}
+	
+	if (soulF.x == fightButtonPos && soulF.y == buttonY) {
 		fight.sprite_index = fightButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			fight.sprite_index = fightButton
-			soulF.x = 437
-			soulF.y = 647
+			soulF.x = itemButtonPos
 		}
-		if (keyboard_check_pressed(vk_left)) {
+		else if (keyboard_check_pressed(vk_left)) {
 			fight.sprite_index = fightButton
-			soulF.x = 760
-			soulF.y = 647
+			soulF.x = actButtonPos
+		}
+		else if (keyboard_check_pressed(vk_enter)) {
+			fightButtonClicked = true;
+			soulF.x = buttonPressed.x
+			soulF.y = buttonPressed.y
 		}
 	}
-	else if (soulF.x == 437 && soulF.y == 647) {
+	else if (soulF.x == itemButtonPos && soulF.y == buttonY) {
 		item.sprite_index = itemButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			item.sprite_index = itemButton
-			soulF.x = 760
-			soulF.y = 647
+			soulF.x = actButtonPos
 		}
 		else if (keyboard_check_pressed(vk_left)) {
 			item.sprite_index = itemButton
-			soulF.x = 114
-			soulF.y = 647
+			soulF.x = fightButtonPos
+		}
+		else if (keyboard_check_pressed(vk_enter)) {
+			itemButtonClicked = true;
+			soulF.x = buttonPressed.x
+			soulF.y = buttonPressed.y
 		}
 	}
-	else if (soulF.x == 760 && soulF.y == 647) {
+	else if (soulF.x == actButtonPos && soulF.y == buttonY) {
 		act.sprite_index = actButtonPressed
 		if (keyboard_check_pressed(vk_left)) {
 			act.sprite_index = actButton
-			soulF.x = 437
-			soulF.y = 647
+			soulF.x = itemButtonPos
 		}
 		else if (keyboard_check_pressed(vk_right)) {
 			act.sprite_index = actButton
-			soulF.x = 114
-			soulF.y = 647
+			soulF.x = fightButtonPos
 		}
+		else if (keyboard_check_pressed(vk_enter)) {
+			actButtonClicked = true;
+			soulF.x = buttonPressed.x
+			soulF.y = buttonPressed.y
+		}
+	}
+	if (fightButtonClicked && keyboard_check_pressed(ord("X"))) {
+		soulF.x = fightButtonPos
+		soulF.y = buttonY
+		fightButtonClicked = false
+	}
+	else if (itemButtonClicked && keyboard_check_pressed(ord("X"))) {
+		soulF.x = itemButtonPos
+		soulF.y = buttonY
+		itemButtonClicked = false
+	}
+	else if (actButtonClicked && keyboard_check_pressed(ord("X"))) {
+		soulF.x = actButtonPos
+		soulF.y = buttonY
+		actButtonClicked = false
 	}
 }

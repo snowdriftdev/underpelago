@@ -21,6 +21,7 @@
   },
   "name":"Underpelago",
   "resources":[
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"actButtonObject","path":"objects/actButtonObject/actButtonObject.yy",},},
     {"id":{"name":"Blaster","path":"objects/Blaster/Blaster.yy",},},
     {"id":{"name":"Bone","path":"objects/Bone/Bone.yy",},},
@@ -98,9 +99,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"itemScreen","path":"rooms/itemScreen/itemScreen.yy",},},
     {"roomId":{"name":"Intro","path":"rooms/Intro/Intro.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"roomId":{"name":"itemScreen","path":"rooms/itemScreen/itemScreen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

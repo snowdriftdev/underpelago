@@ -1,4 +1,4 @@
-		if (room == Room1) {
+ 		if (room == Room1) {
 	//Controls
 	var rightKey = keyboard_check(vk_right);
 	var leftKey = keyboard_check(vk_left);
