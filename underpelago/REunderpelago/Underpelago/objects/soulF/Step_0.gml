@@ -142,9 +142,23 @@ else if (room == itemScreen) {
 		x: 150,
 		y: 340
 	}
-	buttonText = {
-		x: 200,
-		y: 340
+	
+	if (actOption && keyboard_check_pressed(vk_enter)) {
+		iDidntLie = true
+		alarm[0] = 5 * game_get_speed(gamespeed_fps)
+	}
+	
+	if (actButtonClicked && (keyboard_check_pressed(vk_enter))) {
+		actButtonClicked = false
+		actOption = true
+	}
+	else if (itemButtonClicked && (keyboard_check_pressed(vk_enter))) {
+		itemButtonClicked = false
+		itemOption = true
+	}
+	else if (fightButtonClicked && keyboard_check_pressed(vk_enter)) {
+		fightButtonClicked = false
+		attack = true
 	}
 	
 	if (soulF.x == fightButtonPos && soulF.y == buttonY) {
@@ -159,6 +173,7 @@ else if (room == itemScreen) {
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
 			fightButtonClicked = true;
+			attack = false;
 			soulF.x = buttonPressed.x
 			soulF.y = buttonPressed.y
 		}
@@ -174,7 +189,8 @@ else if (room == itemScreen) {
 			soulF.x = fightButtonPos
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
-			itemButtonClicked = true;
+			itemButtonClicked = true
+			itemOption = false
 			soulF.x = buttonPressed.x
 			soulF.y = buttonPressed.y
 		}
@@ -190,11 +206,13 @@ else if (room == itemScreen) {
 			soulF.x = fightButtonPos
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
-			actButtonClicked = true;
+			actButtonClicked = true
+			actOption = false
 			soulF.x = buttonPressed.x
 			soulF.y = buttonPressed.y
 		}
 	}
+	
 	if (fightButtonClicked && keyboard_check_pressed(ord("X"))) {
 		soulF.x = fightButtonPos
 		soulF.y = buttonY
@@ -209,5 +227,18 @@ else if (room == itemScreen) {
 		soulF.x = actButtonPos
 		soulF.y = buttonY
 		actButtonClicked = false
+	}
+	
+	if (actOption && keyboard_check_pressed(ord("X"))) {
+		actButtonClicked = true
+		actOption = false
+	}
+	else if (itemOption && keyboard_check_pressed(ord("X"))) {
+		itemButtonClicked = true
+		itemOption = false
+	}
+	else if (attack && keyboard_check_pressed(ord("X"))) {
+		fightButtonClicked = true
+		attack = false
 	}
 }

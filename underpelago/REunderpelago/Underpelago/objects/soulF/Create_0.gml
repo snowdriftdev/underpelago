@@ -4,12 +4,10 @@ ySpeed = 0
 playerSpeed = 4
 
 // Spawn the hurtbox on your preferred layer
-if (room != itemScreen) {
-	my_hurtbox = instance_create_layer(x, y, Collision, HurtBox);
+my_hurtbox = instance_create_layer(x, y, Collision, HurtBox);
 
-	// Link it to this character
-	my_hurtbox.owner = soulGUP;
-}
+// Link it to this character
+my_hurtbox.owner = soulGUP;
 //Hp?
 hp_max = 99
 hp = hp_max
@@ -22,3 +20,11 @@ timer1 = game_get_speed(gamespeed_fps) * 1;
 itemButtonClicked = false
 actButtonClicked = false
 fightButtonClicked = false
+
+itemOption = false
+actOption = false
+attack = false
+
+whyLieSansResponse = false
+
+iDidntLie = false

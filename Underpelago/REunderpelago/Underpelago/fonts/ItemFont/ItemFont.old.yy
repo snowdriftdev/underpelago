@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Font1",
+  "%Name":"ItemFont",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":15,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":19,
   "maintainGms1Font":false,
-  "name":"Font1",
+  "name":"ItemFont",
   "parent":{
     "name":"Underpelago",
     "path":"Underpelago.yyp",
