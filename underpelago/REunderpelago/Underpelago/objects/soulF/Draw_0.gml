@@ -5,30 +5,30 @@ if (room == Room1) {
 }
 else if (room == itemScreen) {
 	buttonText = {
-		x: 145,
-		y: 325
+		x: 65,
+		y: 265
 	}
-	display_text = "You realized it was Insanity Sans who was helping you... don't you feel bad for helping him now? \nWhat about poor Carter and Anderson who were wrongfully FRAMED"
-	if (fightButtonClicked) {
-		display_text = "Insanity Sans"
+	
+	buttonTextLowerLeft = {
+		y: 425
+	}
+	
+	if (fightButtonClicked || itemButtonClicked || actButtonClicked || actOption || iDidntLie || itemOption) {
 		buttonText = {
 			x: 200,
 			y: 340
 		}
+	}
+	display_text = "You realized it was Insanity Sans who was helping you... don't you feel bad for helping him now? \nWhat about poor Carter and Anderson who were wrongfully FRAMED"
+	display_text_lower_left = ""
+	if (fightButtonClicked) {
+		display_text = "Insanity Sans"
 	}
 	else if (itemButtonClicked) {
 		display_text = "Bro IDK what items they have :sob:"
-		buttonText = {
-			x: 200,
-			y: 340
-		}
 	}
 	else if (actButtonClicked) {
 		display_text = "Insanity Sans"
-		buttonText = {
-			x: 200,
-			y: 340
-		}
 	}
 	
 	if (attack) {
@@ -39,17 +39,18 @@ else if (room == itemScreen) {
 	}
 	else if (actOption) {
 		display_text = "Why did you lie to us?"
-		buttonText = {
-			x: 200,
-			y: 340
-		}
 	}
 	
 	if (iDidntLie) {
 		display_text = "Lie? When did I lie. I wanted you to put my soul together. You did. For that I'm grateful. \nDoesn't mean I won't kill you."
 	}
+	else if (itemOption) {
+		display_text = "Placeholder items"
+		display_text_lower_left = "more Placeholder items"
+	}
 	
 	draw_set_font(ItemFont);
 	draw_text(buttonText.x, buttonText.y, display_text);
+	draw_text(buttonText.x, buttonTextLowerLeft.y, display_text_lower_left);
 }
 draw_self();

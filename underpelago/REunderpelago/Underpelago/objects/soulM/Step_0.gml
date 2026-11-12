@@ -58,7 +58,7 @@
 }
 	//Hitbox passing through hurtbox
 	if(instance_exists(soulM)){
-	if(place_meeting(x + xSpeed,y,CollisionSheild)){
+	if(place_meeting(x + xSpeed,y,CollisionShield)){
           xSpeed = 0;
 		}
 else if(instance_exists(my_hurtbox)){

@@ -145,6 +145,7 @@ else if (room == itemScreen) {
 	
 	if (actOption && keyboard_check_pressed(vk_enter)) {
 		iDidntLie = true
+		actOption = false
 		alarm[0] = 5 * game_get_speed(gamespeed_fps)
 	}
 	
@@ -229,7 +230,7 @@ else if (room == itemScreen) {
 		actButtonClicked = false
 	}
 	
-	if (actOption && keyboard_check_pressed(ord("X"))) {
+	if (actOption && keyboard_check_pressed(ord("X")) && !iDidntLie) {
 		actButtonClicked = true
 		actOption = false
 	}

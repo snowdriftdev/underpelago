@@ -1,13 +1,16 @@
+window_set_size(640, 480)
+
 xSpeed = 0
 ySpeed = 0
 
 playerSpeed = 4
 
 // Spawn the hurtbox on your preferred layer
-my_hurtbox = instance_create_layer(x, y, Collision, HurtBox);
+my_hurtbox = instance_create_layer(x, y, "Collision", HurtBox);
 
 // Link it to this character
 my_hurtbox.owner = soulGUP;
+
 //Hp?
 hp_max = 99
 hp = hp_max
@@ -24,7 +27,5 @@ fightButtonClicked = false
 itemOption = false
 actOption = false
 attack = false
-
-whyLieSansResponse = false
 
 iDidntLie = false

@@ -31,7 +31,7 @@
     {"id":{"name":"CollisionGUP","path":"objects/CollisionGUP/CollisionGUP.yy",},},
     {"id":{"name":"CollisionL","path":"objects/CollisionL/CollisionL.yy",},},
     {"id":{"name":"CollisionR","path":"objects/CollisionR/CollisionR.yy",},},
-    {"id":{"name":"CollisionSheild","path":"objects/CollisionSheild/CollisionSheild.yy",},},
+    {"id":{"name":"CollisionShield","path":"objects/CollisionShield/CollisionShield.yy",},},
     {"id":{"name":"cut","path":"objects/cut/cut.yy",},},
     {"id":{"name":"fightButtonObject","path":"objects/fightButtonObject/fightButtonObject.yy",},},
     {"id":{"name":"game","path":"objects/game/game.yy",},},
