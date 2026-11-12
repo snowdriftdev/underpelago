@@ -17,7 +17,7 @@ else if (room == itemScreen) {
 		buttonText = {
 			x: 200,
 			y: 340
-		}
+		} 
 	}
 	display_text = "You realized it was Insanity Sans who was helping you... don't you feel bad for helping him now? \nWhat about poor Carter and Anderson who were wrongfully FRAMED"
 	display_text_lower_left = ""
