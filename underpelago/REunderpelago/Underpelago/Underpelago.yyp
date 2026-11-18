@@ -10,7 +10,9 @@
   },
   "defaultScriptType":0,
   "Folders":[],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"X16A - Culmination Mix A - Underswap Reckoning (1080p).mp4","CopyToMask":-1,"filePath":"datafiles","name":"X16A - Culmination Mix A - Underswap Reckoning (1080p).mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
@@ -22,6 +24,7 @@
   "name":"Underpelago",
   "resources":[
     {"id":{"name":"ItemFont","path":"fonts/ItemFont/ItemFont.yy",},},
+    {"id":{"name":"nameFont","path":"fonts/nameFont/nameFont.yy",},},
     {"id":{"name":"actButtonObject","path":"objects/actButtonObject/actButtonObject.yy",},},
     {"id":{"name":"Blaster","path":"objects/Blaster/Blaster.yy",},},
     {"id":{"name":"Bone","path":"objects/Bone/Bone.yy",},},
@@ -71,6 +74,7 @@
     {"id":{"name":"boxSprite","path":"sprites/boxSprite/boxSprite.yy",},},
     {"id":{"name":"BTD6Soul_2","path":"sprites/BTD6Soul_2/BTD6Soul_2.yy",},},
     {"id":{"name":"BTD6Soul","path":"sprites/BTD6Soul/BTD6Soul.yy",},},
+    {"id":{"name":"ClassicHeart","path":"sprites/ClassicHeart/ClassicHeart.yy",},},
     {"id":{"name":"CollisionSprite","path":"sprites/CollisionSprite/CollisionSprite.yy",},},
     {"id":{"name":"CollisionSpriteG","path":"sprites/CollisionSpriteG/CollisionSpriteG.yy",},},
     {"id":{"name":"CollisionSpriteGUP","path":"sprites/CollisionSpriteGUP/CollisionSpriteGUP.yy",},},

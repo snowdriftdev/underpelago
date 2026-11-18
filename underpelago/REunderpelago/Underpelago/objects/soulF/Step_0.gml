@@ -133,10 +133,10 @@ else if (room == itemScreen) {
 	var act = actButtonObject
 	var fight = fightButtonObject
 	
-	var itemButtonPos = 437
-	var actButtonPos = 760
-	var fightButtonPos = 114
-	var buttonY = 647
+	var itemButtonPos = 466
+	var actButtonPos = 100
+	var fightButtonPos = 14
+	var buttonY = 421
 	
 	var buttonPressed = {
 		x: 150,
