@@ -133,10 +133,10 @@ else if (room == itemScreen) {
 	var act = actButtonObject
 	var fight = fightButtonObject
 	
-	var itemButtonPos = 466
-	var actButtonPos = 100
-	var fightButtonPos = 14
-	var buttonY = 421
+	var itemButtonPos = 328
+	var actButtonPos = 168
+	var fightButtonPos = 15
+	var buttonY = 424
 	
 	var buttonPressed = {
 		x: 150,
@@ -166,11 +166,11 @@ else if (room == itemScreen) {
 		fight.sprite_index = fightButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			fight.sprite_index = fightButton
-			soulF.x = itemButtonPos
+			soulF.x = actButtonPos
 		}
 		else if (keyboard_check_pressed(vk_left)) {
 			fight.sprite_index = fightButton
-			soulF.x = actButtonPos
+			soulF.x = itemButtonPos
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
 			fightButtonClicked = true;
@@ -183,11 +183,11 @@ else if (room == itemScreen) {
 		item.sprite_index = itemButtonPressed
 		if (keyboard_check_pressed(vk_right)) {
 			item.sprite_index = itemButton
-			soulF.x = actButtonPos
+			soulF.x = fightButtonPos
 		}
 		else if (keyboard_check_pressed(vk_left)) {
 			item.sprite_index = itemButton
-			soulF.x = fightButtonPos
+			soulF.x = actButtonPos
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
 			itemButtonClicked = true
@@ -200,11 +200,11 @@ else if (room == itemScreen) {
 		act.sprite_index = actButtonPressed
 		if (keyboard_check_pressed(vk_left)) {
 			act.sprite_index = actButton
-			soulF.x = itemButtonPos
+			soulF.x = fightButtonPos
 		}
 		else if (keyboard_check_pressed(vk_right)) {
 			act.sprite_index = actButton
-			soulF.x = fightButtonPos
+			soulF.x = itemButtonPos
 		}
 		else if (keyboard_check_pressed(vk_enter)) {
 			actButtonClicked = true

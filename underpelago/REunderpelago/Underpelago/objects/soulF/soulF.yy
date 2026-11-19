@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"ClassicHeart",
-    "path":"sprites/ClassicHeart/ClassicHeart.yy",
+    "name":"classicHeartButBigger",
+    "path":"sprites/classicHeartButBigger/classicHeartButBigger.yy",
   },
   "spriteMaskId":{
     "name":"desmondsSoul",

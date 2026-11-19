@@ -75,6 +75,7 @@
     {"id":{"name":"BTD6Soul_2","path":"sprites/BTD6Soul_2/BTD6Soul_2.yy",},},
     {"id":{"name":"BTD6Soul","path":"sprites/BTD6Soul/BTD6Soul.yy",},},
     {"id":{"name":"ClassicHeart","path":"sprites/ClassicHeart/ClassicHeart.yy",},},
+    {"id":{"name":"classicHeartButBigger","path":"sprites/classicHeartButBigger/classicHeartButBigger.yy",},},
     {"id":{"name":"CollisionSprite","path":"sprites/CollisionSprite/CollisionSprite.yy",},},
     {"id":{"name":"CollisionSpriteG","path":"sprites/CollisionSpriteG/CollisionSpriteG.yy",},},
     {"id":{"name":"CollisionSpriteGUP","path":"sprites/CollisionSpriteGUP/CollisionSpriteGUP.yy",},},
