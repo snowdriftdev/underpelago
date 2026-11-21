@@ -5,8 +5,8 @@ if (room == Room1) {
 }
 else if (room == itemScreen) {
 	buttonText = {
-		x: 85,
-		y: 272
+		x: 70,
+		y: 270
 	}
 	
 	buttonTextLowerLeft = {
